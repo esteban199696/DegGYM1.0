@@ -120,45 +120,57 @@
               <!-- aqui formulario de registro de usuarios -->
               <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>Personal-info</h5>
+          <h5>Registro Gastos y Costos</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="#" method="get" class="form-horizontal">
             <div class="control-group">
-              <label class="control-label">Id Ususario :</label>
+              <label class="control-label">Id Gasto :</label>
               <div class="controls">
-                <input type="text" class="span11" placeholder="Ingrese Id" />
+                <input type="text" class="span6" placeholder="Ingrese Id" />
               </div>
             </div>
             <div class="control-group">
-              <label class="control-label">Nombre :</label>
+              <label class="control-label">Descripción :</label>
               <div class="controls">
-                <input type="text" class="span11" placeholder="Ingrese nombre" />
+                <textarea class="span6" ></textarea>
               </div>
             </div>
-            <div class="control-group">
-              <label class="control-label">Apellido :</label>
+
+            <div class="control-group span6">
+              <label class="control-label">Total Gasto :</label>
               <div class="controls">
-                <input type="password"  class="span11" placeholder="Ingrese Apellido"  />
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Contraseña :</label>
-              <div class="controls">
-                <input type="text" class="span11" placeholder="Ingrese Contraseña" />
+                <div class="input-append span12">
+                  <input type="text" placeholder="5.000" class="span12">
+                  <span class="add-on">$</span> </div>
               </div>
             </div>
 
             <div class="control-group">
-            <label class="control-label">Tipo de usuario :</label>
+            <label class="control-label">Tipo de Gasto :&nbsp;&nbsp;&nbsp;</label>
             <div class="controls">
-              <select >
-                <option>Administrador</option>
-                <option>Empleado</option>
-
+              <select class="span3">
+                <option>Compra de Productos</option>
+                <option>Pago de Facturas o Nomina</option>
+                <option>Otros</option>
               </select>
             </div>
           </div>
+          <div class="control-group">
+          <label class="control-label">Fecha : </label>
+          <div class="controls">
+            <div  data-date="12-02-2012" class="input-append date datepicker span6">
+              <input type="text" value="12-02-2012"  data-date-format="mm-dd-yyyy" class="span12" >
+              <span class="add-on"><i class="icon-th"></i></span> </div>
+          </div>
+        </div>
+        <div class="control-group">
+          <label class="control-label">Id Ganancia :</label>
+          <div class="controls">
+            <input type="text" class="span6" placeholder="Ingrese Id" />
+          </div>
+        </div>
+
             <div class="form-actions">
               <button type="submit" class="btn btn-success">Guardar</button>
             </div>
